@@ -1,4 +1,4 @@
-# Luke's Auto-Rice Bootstraping Scripts (LARBS)
+# Auto-Rice Bootstraping Scripts (ARBS)
 
 
 ## Installation:
@@ -12,12 +12,12 @@ sh larbs.sh
 
 That's it.
 
-## What is LARBS?
+## What is ARBS?
 
-LARBS is a script that autoinstalls and autoconfigures a fully-functioning
+ARBS is a script that autoinstalls and autoconfigures a fully-functioning
 and minimal terminal-and-vim-based Arch Linux environment.
 
-LARBS can be run on a fresh install of Arch or Artix Linux, and provides you
+ARBS can be run on a fresh install of Arch or Artix Linux, and provides you
 with a fully configured diving-board for work or more customization.
 
 ## Customization
@@ -34,7 +34,7 @@ beginning of the script or giving the script one of these options:
 
 ### The `progs.csv` list
 
-LARBS will parse the given programs list and install all given programs. Note
+ARBS will parse the given programs list and install all given programs. Note
 that the programs file must be a three column `.csv`.
 
 The first column is a "tag" that determines how the program is installed, ""
@@ -65,7 +65,7 @@ which commands to run to install it. You can easily add new methods of
 installations and tags as well.
 
 Note that programs from the AUR can only be built by a non-root user. What
-LARBS does to bypass this by default is to temporarily allow the newly created
+ARBS does to bypass this by default is to temporarily allow the newly created
 user to use `sudo` without a password (so the user won't be prompted for a
 password multiple times in installation). This is done ad-hocly, but
 effectively with the `newperms` function. At the end of installation,
