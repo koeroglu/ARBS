@@ -14,7 +14,7 @@ while getopts ":a:r:b:p:h" o; do case "${o}" in
 	*) printf "Invalid option: -%s\\n" "$OPTARG" && exit 1 ;;
 esac done
 
-[ -z "$dotfilesrepo" ] && dotfilesrepo="hthttps://github.com/koeroglu/voidrice.git"
+[ -z "$dotfilesrepo" ] && dotfilesrepo="https://github.com/koeroglu/archrice.git"
 [ -z "$progsfile" ] && progsfile="https://raw.githubusercontent.com/koeroglu/LARBS/master/progs.csv"
 [ -z "$aurhelper" ] && aurhelper="yay"
 [ -z "$repobranch" ] && repobranch="master"
